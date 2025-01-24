@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'users',  # Our custom app for user management
+    'rest_framework.authtoken',
+    'rest_auth',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -88,7 +90,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'user_service_db',
-        'USER': 'adiladmin6',
+        'USER': 'postgres',
         'PASSWORD': 'Ayati2006!!',
         'HOST': 'localhost',
         'PORT': '5432',
